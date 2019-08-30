@@ -6,13 +6,18 @@
     "concurrently": "^4.1.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-scripts": "3.1.1"
+    "react-scripts": "3.1.1",
+    "sequelize": "^5.17.1",
+    "sequelize-cli": "^5.5.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "server": "nodemon server.js",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "client": "yarn start --prefix client",
+    "dev": "concurrently \"yarn start server\" \"yarn start client\""
   },
   "eslintConfig": {
     "extends": "react-app"
