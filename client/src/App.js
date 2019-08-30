@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import Form from './Components/Form';
+import UploadForm from './Components/UploadForm';
 
 function App() {
   return (
-    <Form />
+    <UploadForm />
   );
 }
 
